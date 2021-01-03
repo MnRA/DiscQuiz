@@ -46,7 +46,11 @@
      [{:parameters {:path [:quiz-name]}
        :start (fn [params]
                 (re-frame/dispatch [:update-quiz (get-in params [:path :quiz-name])]))
-       :stop  (fn [& params] (js/console.log "Leaving sub-page 2"))}]}]])
+       :stop  (fn [& params] (js/console.log "Leaving sub-page 2"))}]}]
+   ["results/"
+    {:name      :results/index
+     :view      views/results-index
+     :link-text "Results"}]])
 
 (defn on-navigate [new-match]
   (when new-match

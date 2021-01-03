@@ -8,8 +8,13 @@
 
 (def available-quizzes ["who-said-it1"])
 
+(defn process-quiz-data [quiz]
+  (let [questions (:questions quiz )]
+    (do (re-frame/dispatch [:set-current-question (first questions)]))
+    quiz))
+
 (defn handler [response]
-  (re-frame/dispatch [:set-quiz (reader/read-string response)]))
+  (re-frame/dispatch [:set-quiz (process-quiz-data (reader/read-string response))]))
 
 (defn load-edn [url]
   (GET url {:handler handler}))

@@ -23,3 +23,7 @@
 (re-frame/reg-sub
  ::quiz-data
  #(:quiz-data %))
+
+(re-frame/reg-sub
+ ::current-question
+ #(get-in % [:quiz-data :current-question]))

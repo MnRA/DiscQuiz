@@ -35,3 +35,8 @@
  :set-quiz
  (fn [db [_ quiz]]
    (assoc db :current-quiz quiz)))
+
+(re-frame/reg-event-db
+ :set-current-question
+ (fn [db [_ current-q]]
+   (assoc-in db [:quiz-data :current-question] current-q)))

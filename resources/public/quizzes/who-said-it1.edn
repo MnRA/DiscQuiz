@@ -1,4 +1,45 @@
 {:title "Who said this?"
- :questions [{:phrase "I think you should eat snacks"
-              :answers ["Yekky" "Lohab" "Xerxes" "JBR"]
-              :solution "Yekky"}]}
+ :questions [{:phrase "snacking.. yes.. snacking on smarties to celebrate our small victories"
+              :answers ["Yekky" "Lohabquas" "Xerxes" "JBR"]
+              :solution "Yekky"}
+             {:phrase "I can handle a Litre of anything below about 50%,assuming it doesn't taste like shit (in which case I will bitch and moan and eventually stop drinking it)"
+              :answers ["Xerxes" "King Boo" "Lohabquas" "Nuclear Pasta"]
+              :solution "Xerxes"}
+             {:phrase "@Xerxes-BFG your penis is huge, love it"
+              :answers ["LaochraGael" "Maytox" "Lohabquas" "Rasty"]
+              :solution "Lohabquas"}
+             {:phrase "Bossman is streaming in the viper cup. Go watch him get his ass kicked!"
+              :answers ["Yekky" "King Boo" "Rasty" "LaochraGael"]
+              :solution "LaochraGael"}
+             {:phrase "Oh wait lol I just realzed your name is plus nomad he wasn't referring to the map 111111"
+              :answers ["UmaTruta" "NoKings" "ilovebaskets" "Shmukapod"]
+              :solution "NoKings"}
+             {:phrase "I would only think poorly of someone because of their own actions"
+              :answers ["Lohabquas" "Xerxes" "JBR" "Nuclear Pasta"]
+              :solution "JBR"}
+             {:phrase "Phoenix is satans butthole"
+              :notes ["Phoenix is referring to the city in the USA"]
+              :answers ["NoKings" "ilovebaskets" "Aureliusofrome" "Nuclear Pasta"]
+              :solution "ilovebaskets"}
+             {:phrase "I've never heard of such sorcery, the devils work I tell you"
+              :answers ["Xerxes" "Rasty" "Lohabquas" "Brevan_e"]
+              :notes ["This is referring to social media"]
+              :solution "Rasty"}
+             {:phrase "FUCK YOU AND YOUR BEAUTIFUL BODY"
+              :notes ["This is referring to Maytox"]
+              :answers ["Rasty" "Xerxes" "Brevan_e" "Aureliusofrome"]
+              :solution "Brevan_e"}
+             {:phrase "The only one allowed to start drama is me when i spam jbr chat for onlyfan,24h stream, adn 16xx. @JBR"
+              :answers ["Maytox" "Lohabquas" "Rasty" "UmaTruta"]
+              :solution "Maytox"}
+             {:phrase "everyone in sweden hates spain! Norway, Denmark, germany, netherlands, finland, russia, all the baltic countries, croatia, africa as a conitinent, well basicly the whole world. Except canada"
+              :answers ["fantazzzt" "Solve" "UmaTruta" "Blae'sanjay"]
+              :solution "Blae'sanjay"
+              }
+             {:phrase "He is one of my best friends around here!"
+              :notes ["He is referring to Shmukapod"]
+              :answers ["Solve" "Rasty" "Xerxes" "ilovebaskets"]
+              :solution "Solve"
+              }
+             ]
+ }
