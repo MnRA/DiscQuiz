@@ -4,7 +4,7 @@
    [cljs.tools.reader.edn :as reader]
    [ajax.core :refer [GET]]))
 
-(def location (if disc-quiz.config/debug? "" "/resources/public"))
+(def location (if disc-quiz.config/debug? "" "/DiscQuiz/resources/public"))
 
 (def available-quizzes ["who-said-it1"])
 
