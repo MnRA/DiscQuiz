@@ -4,7 +4,7 @@
    [cljs.tools.reader.edn :as reader]
    [ajax.core :refer [GET]]))
 
-
+(def location (if disc-quiz.config/debug? "" "/resources/public"))
 
 (def available-quizzes ["who-said-it1"])
 
@@ -20,7 +20,7 @@
   (GET url {:handler handler}))
 
 (defn get-quiz [name]
-  (load-edn (str "/quizzes/" name ".edn")))
+  (load-edn (str location "/quizzes/" name ".edn")))
 
 (re-frame/reg-fx
  :update-quiz
