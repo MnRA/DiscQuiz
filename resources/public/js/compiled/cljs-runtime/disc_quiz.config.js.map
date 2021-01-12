@@ -1,1 +1,0 @@
-{"version":3,"sources":["disc_quiz/config.cljs"],"mappings":";AAEA,AAAKA,AACMC","names":["disc-quiz.config/debug?","js/goog.DEBUG"],"sourcesContent":["(ns disc-quiz.config)\n\n(def debug?\n  ^boolean goog.DEBUG)\n"]}

@@ -1,1 +1,0 @@
-{"version":3,"sources":["disc_quiz/db.cljs"],"mappings":";AAEA,AAAA,AAAA,AAAA,AAAKA","names":["disc-quiz.db/default-db"],"sourcesContent":["(ns disc-quiz.db)\n\n(def default-db\n  {:current-route nil})\n"]}

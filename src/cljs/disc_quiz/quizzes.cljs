@@ -1,17 +1,21 @@
 (ns disc-quiz.quizzes
   (:require
+   [disc-quiz.config :as config]
    [re-frame.core :as re-frame]
    [cljs.tools.reader.edn :as reader]
    [ajax.core :refer [GET]]))
 
-(def location (if disc-quiz.config/debug? "" "/DiscQuiz/resources/public"))
+(def location (if config/debug? "" "/DiscQuiz/resources/public"))
 
 (def available-quizzes ["who-said-it1"])
 
 (defn process-quiz-data [quiz]
   (let [questions (:questions quiz )]
-    (do (re-frame/dispatch [:set-current-question (first questions)]))
-    quiz))
+    (do (re-frame/dispatch [:set-current-question (rand-nth questions)]))
+    (-> quiz
+        (assoc :questions (map #(update % :answers shuffle) questions))
+        (update :questions shuffle)
+        )))
 
 (defn handler [response]
   (re-frame/dispatch [:set-quiz (process-quiz-data (reader/read-string response))]))

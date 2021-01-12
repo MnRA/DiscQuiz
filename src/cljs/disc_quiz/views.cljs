@@ -49,7 +49,7 @@
 
 (defn quiz-index []
   [main-layout
-   [:div
+   [:div.card>div.card-content
     (for [quiz quizzes/available-quizzes]
       ^{:key quiz}
       [:a {:on-click
@@ -61,6 +61,7 @@
 (defn handle-answer-click [q a]
   (update-answered (keyword (:phrase q)) a)
   )
+
 
 (defn make-answer-button [answer question]
   ^{:key answer} [:div.column.is-half.has-text-centered
